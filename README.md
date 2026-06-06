@@ -1,6 +1,6 @@
 # LaTeX-Vorlage für die FOM Hochschule für Oekonomie & Management
 
-[![Build](https://github.com/andygrunwald/FOM-LaTeX-Template/actions/workflows/Check.yml/badge.svg)](https://github.com/andygrunwald/FOM-LaTeX-Template/actions/workflows/Check.yml)
+[![Build](https://github.com/Git069/Bachelor-Expose/actions/workflows/build.yml/badge.svg)](https://github.com/Git069/Bachelor-Expose/actions/workflows/build.yml)
 
 Eine [LaTeX](https://de.wikipedia.org/wiki/LaTeX)-Vorlage für den persönlichen Gebrauch für Haus-, Seminar-, Bachelor und Master-Arbeiten an der [FOM Hochschule für Oekonomie & Management](https://www.fom.de/).
 
@@ -53,11 +53,11 @@ Um dies zu tun, gibt es mehrere Möglichkeiten, die wir nachfolgend kurz vorstel
 **Generell gilt**:
 Dieses Dokument beschreibt eine ganze Menge Details, die dir beim Erstellen und bearbeiten des Dokuments hilfreich sein könnten.
 Leider wird es unmöglich sein, jede Frage abzudecken.
-Solltest du uns kontaktieren wollen, um eine Frage zu stellen, ein Problem mit zuteilen oder um einfach nur mal Danke sagen zu wollen, eröffne doch ein [neues Issue](https://github.com/andygrunwald/FOM-LaTeX-Template/issues/new) in diesem Projekt.
+Solltest du eine Frage haben oder ein Problem feststellen, kannst du ein [neues Issue](https://github.com/Git069/Bachelor-Expose/issues/new) in diesem Projekt eröffnen.
 
 ### Klassischer Download
 
-Über den *Clone or Download* Button in der oberen rechten Ecke kannst du dir diese Vorlage herunterladen ([ZIP-Archiv](https://github.com/andygrunwald/FOM-LaTeX-Template/archive/master.zip)).
+Über den *Clone or Download* Button in der oberen rechten Ecke kannst du dir diese Vorlage herunterladen ([ZIP-Archiv](https://github.com/Git069/Bachelor-Expose/archive/master.zip)).
 Danach kannst du, wie gewohnt, die Dateien lokal bearbeiten, deine Arbeit schreiben, Drucken und abgeben.
 
 ### Fork auf Github
@@ -350,8 +350,8 @@ Wird Docker unter Windows 10 verwendet, muss der Daemon wie folgt konfiguriert w
 
 ![Docker Konfiguration unter Windows 10](https://cloud.githubusercontent.com/assets/6319666/17108377/7c3aef54-5293-11e6-95e3-bd99f42820f0.png)
 
-Die benötigten Pakete befinden sich in dem Docker-Image, welches auf [Docker Hub unter andygrunwald/fom-latex-template](https://hub.docker.com/r/andygrunwald/fom-latex-template/) zur Verfügung steht.
-Es wird bei der Ausführung automatisch heruntergeladen.
+Die benötigten Pakete befinden sich in dem Docker-Image, welches lokal aus dem beiliegenden `Dockerfile` gebaut wird.
+Es wird bei der Ausführung automatisch erstellt.
 
 ### LaTeX-Pakete
 
@@ -375,7 +375,7 @@ Bei dem nächsten Push auf GitHub funktioniert das Skript dann, da es jetzt auf 
 Wenn Du das Docker Image selbst bauen möchtest, kannst Du es mit dem nachfolgenden Befehl tun:
 
 ```
-docker build -t andygrunwald/fom-latex-template .
+docker build -t bachelor-expose .
 ```
 
 ## LaTeX mit Windows Subsystem for Linux kompilieren 
@@ -451,7 +451,7 @@ Um bestimmte Bereiche von der Wortanzahl auszuschießen, können `%TC:ignore` un
 ## Ich habe eine Frage oder ein Problem
 
 Ab und zu kommt es vor, dass es nicht klappt wie beschrieben oder man eine Frage hat.
-Ich würde euch bitten mir nicht persönlich eine E-Mail zu schreiben, sondern lieber ein [neues Issue](https://github.com/andygrunwald/FOM-LaTeX-Template/issues/new) in diesem Projekt eröffnet.
+Am besten eröffnest du dafür ein [neues Issue](https://github.com/Git069/Bachelor-Expose/issues/new) in diesem Projekt.
 Dies hat folgende Vorteile:
 
 * andere Personen können zur Lösung beitragen (weil sie diese ggf. auch hatten)
@@ -462,7 +462,7 @@ Dies hat folgende Vorteile:
 
 Verbesserungen an dieser Vorlage sind stets erwünscht und willkommen.
 Github (diese Plattform) selbst ist dafür gemacht, um zusammen an Open Source Projekten zu arbeiten.
-Deswegen werden Änderungen über [Pull Requests](https://github.com/andygrunwald/FOM-LaTeX-Template/pulls) sehr gerne entgegen genommen.
+Deswegen werden Änderungen über [Pull Requests](https://github.com/Git069/Bachelor-Expose/pulls) sehr gerne entgegen genommen.
 
 Wenn du das erste mal mit [Git](https://git-scm.com/), [Github](https://github.com/) und Pull Requests arbeitest, können dir folgende zwei Artikel weiter helfen:
 
