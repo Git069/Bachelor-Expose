@@ -2,35 +2,35 @@
 
 Unternehmen stehen unter zunehmendem Druck, repetitive und regelbasierte 
 Geschäftsprozesse zu automatisieren, um Effizienz zu steigern und operative 
-Kosten zu senken \autocite[Vgl.][S.~269]{VanDerAalst2018}. Robotic Process Automation (RPA) 
+Kosten zu senken \autocite[Vgl.][S.~269]{VanDerAalst2018}. \ac{RPA} 
 hat sich in diesem Kontext als eine der meistdiskutierten Technologien der 
-jüngeren Vergangenheit etabliert \autocite[Vgl.][S.~1]{Syed2020}. RPA-Lösungen ermöglichen 
+jüngeren Vergangenheit etabliert \autocite[Vgl.][S.~1]{Syed2020}. \acs{RPA}-Lösungen ermöglichen 
 es, Softwareroboter so zu konfigurieren, dass sie menschliche Interaktionen mit 
 digitalen Systemen imitieren und strukturierte, regelbasierte Abläufe ohne 
 menschlichen Eingriff ausführen \autocite[Vgl.][S.~3]{CzarneckiFettke2021}.
 
 Der dominierende Einsatzansatz in der Literatur und Praxis setzt dabei auf 
-API-basierte Integrationspunkte, über die Bots direkt auf die Datenschicht 
+\acs{API}-basierte Integrationspunkte, über die Bots direkt auf die Datenschicht 
 von Systemen zugreifen \autocite[Vgl.][S.~3]{HermJaniesch2022}. In der betrieblichen 
 Realität existiert jedoch eine große Anzahl von Systemen, die solche modernen 
 Schnittstellen nicht bereitstellen: sogenannte Legacy-Systeme, deren 
-Architektur auf proprietären Oberflächen basiert und die keine REST- oder 
-SOAP-Schnittstellen anbieten \autocite[Vgl.][S.~103]{Bisbal1999}. Für diese Systemklasse 
-bleibt als Automatisierungsweg einzig die UI-basierte RPA, bei der ein 
+Architektur auf proprietären Oberflächen basiert und die keine \acs{REST}- oder 
+\acs{SOAP}-Schnittstellen anbieten \autocite[Vgl.][S.~103]{Bisbal1999}. Für diese Systemklasse 
+bleibt als Automatisierungsweg einzig die \acs{UI}-basierte \ac{RPA}, bei der ein 
 Softwareroboter ausschließlich über die grafische Benutzeroberfläche mit dem 
 System interagiert – analog zu einem menschlichen Anwender 
 \autocite[Vgl.][S.~1]{AgostinelliLupia2022}.
 
-Obwohl UI-basierte RPA technisch in der Lage ist, diese Integrationslücke zu 
+Obwohl \acs{UI}-basierte \ac{RPA} technisch in der Lage ist, diese Integrationslücke zu 
 schließen \autocite[Vgl.][S.~104]{RutschiDibbern2020}, mangelt es der bisherigen Forschung 
 an einem strukturierten Vorgehensmodell, das die besonderen Anforderungen 
-API-loser Legacy-Umgebungen systematisch adressiert. Bestehende 
-Implementierungsrahmen für RPA-Projekte sind in ihrer Ausrichtung häufig 
+\acs{API}-loser Legacy-Umgebungen systematisch adressiert. Bestehende 
+Implementierungsrahmen für \acs{RPA}-Projekte sind in ihrer Ausrichtung häufig 
 generisch gehalten \autocite[Vgl.][S.~5]{KrakauFeldmann2023} oder setzen implizit eine 
-moderne, API-fähige Systemlandschaft voraus \autocite[Vgl.][S.~405]{SantosPereira2020}. Die 
-spezifischen Herausforderungen der UI-basierten Automatisierung in 
+moderne, \acs{API}-fähige Systemlandschaft voraus \autocite[Vgl.][S.~405]{SantosPereira2020}. Die 
+spezifischen Herausforderungen der \acs{UI}-basierten Automatisierung in 
 Legacy-Kontexten – darunter die Fragilitität oberflächenabhängiger Selektoren, 
-die fehlende Transaktionssicherheit auf GUI-Ebene und die eingeschränkte 
+die fehlende Transaktionssicherheit auf \acs{GUI}-Ebene und die eingeschränkte 
 Fehlerbehandlung
 – werden in den vorhandenen Modellen nicht hinreichend berücksichtigt.
 
@@ -39,8 +39,8 @@ Forschungsfrage, die den Kern der vorliegenden Arbeit bildet:
 
 \begin{quote}
 \textit{Wie lässt sich ein strukturiertes Vorgehensmodell entwickeln, das 
-Unternehmen eine systematische Einführung und Durchführung von UI-basierter 
-Robotic Process Automation in API-losen Legacy-Systemumgebungen ermöglicht?}
+Unternehmen eine systematische Einführung und Durchführung von \acs{UI}-basierter 
+Robotic Process Automation in \acs{API}-losen Legacy-Systemumgebungen ermöglicht?}
 \end{quote}
 
 Diese Frage ist bewusst offen formuliert und nicht unmittelbar beantwortbar, 
@@ -48,17 +48,17 @@ da sie die Entwicklung eines neuartigen Artefakts – eines kontextspezifischen
 Vorgehensmodells – erfordert, das bislang in der Literatur nicht vorliegt. 
 Aus der Hauptforschungsfrage lassen sich folgende Teilfragen ableiten, die im 
 Rahmen der Arbeit bearbeitet werden sollen: Welche technischen und 
-organisatorischen Merkmale zeichnen API-lose Legacy-Umgebungen aus und welche 
-spezifischen Anforderungen stellen sie an eine RPA-Implementierung? Welche 
-bestehenden Vorgehensmodelle und Implementierungsrahmen für RPA existieren 
+organisatorischen Merkmale zeichnen \acs{API}-lose Legacy-Umgebungen aus und welche 
+spezifischen Anforderungen stellen sie an eine \acs{RPA}-Implementierung? Welche 
+bestehenden Vorgehensmodelle und Implementierungsrahmen für \ac{RPA} existieren 
 und wo liegen deren Grenzen im Legacy-Kontext \autocite[Vgl.][S.~1]{Wewerka2023}? Welche 
 Phasen und Aktivitäten muss ein Vorgehensmodell umfassen, das diesen 
 Anforderungen gerecht wird?
 
 Im Rahmen dieser Arbeit wird die These vertreten, dass ein kontextspezifisches 
-Vorgehensmodell für UI-basierte RPA in API-losen Umgebungen einen 
+Vorgehensmodell für \acs{UI}-basierte \ac{RPA} in \acs{API}-losen Umgebungen einen 
 eigenständigen wissenschaftlichen Beitrag darstellt, der sich von generischen 
-RPA-Implementierungsansätzen inhaltlich und methodisch abgrenzt. Die Arbeit 
+\acs{RPA}-Implementierungsansätzen inhaltlich und methodisch abgrenzt. Die Arbeit 
 richtet sich primär an Praktiker und Entscheidungsträger in Unternehmen, die 
 mit Legacy-Systemlandschaften konfrontiert sind, sowie an die 
 wirtschaftsinformatische Forschung, die sich mit Automatisierungsstrategien 
