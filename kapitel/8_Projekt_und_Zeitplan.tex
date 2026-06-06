@@ -44,21 +44,40 @@ in anderen Modulen zu berücksichtigen. Der Zeitplan ist daher bewusst mit moder
 Puffern versehen, um auf unvorhergesehene Verzögerungen reagieren zu können, ohne den 
 Gesamtplan zu gefährden.
 
-\begin{table}[h]
-\centering
+
+\begingroup
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.4}
+\setlength{\aboverulesep}{0pt}
+\setlength{\belowrulesep}{0pt}
+\begin{longtable}{P{1.5cm}P{8.0cm}P{3.5cm}}
 \caption{Grober Zeitplan der Bachelorarbeit}
-\begin{tabular}{lll}
+\label{tab:zeitplan}\\
 \toprule
-\textbf{Phase} & \textbf{Arbeitspaket} & \textbf{Dauer (ca.)} \\
+\rowcolor{hellgrau}
+\textbf{Phase} & \textbf{Arbeitspaket} & \textbf{Dauer (ca.)} \\[2pt]
 \midrule
-1 & Systematische Literaturrecherche \& Exposé-Finalisierung & 4--5 Wochen \\
-2 & Forschungsstandsaufarbeitung \& Lückenanalyse            & 3 Wochen   \\
-3 & Modellentwicklung \& Expertenvalidierung                  & 3 Wochen   \\
-4 & Schriftliche Ausarbeitung \& Qualitätssicherung           & 3--4 Wochen \\
-  & Puffer, Formatierung, Druck, Einreichung                  & 2 Wochen   \\
+\endfirsthead
+\multicolumn{3}{l}{\small\itshape Fortsetzung Tabelle \ref{tab:zeitplan}}\\
+\toprule
+\rowcolor{hellgrau}
+\textbf{Phase} & \textbf{Arbeitspaket} & \textbf{Dauer (ca.)} \\[2pt]
+\midrule
+\endhead
 \bottomrule
-\end{tabular}
-\end{table}
+\endfoot
+ 
+1 & Systematische Literaturrecherche \& Exposé-Finalisierung & 4--5 Wochen \\
+\addlinespace
+2 & Forschungsstandsaufarbeitung \& Lückenanalyse            & 3 Wochen   \\
+\addlinespace
+3 & Modellentwicklung \& Expertenvalidierung                   & 3 Wochen   \\
+\addlinespace
+4 & Schriftliche Ausarbeitung \& Qualitätssicherung            & 3--4 Wochen \\
+\addlinespace
+  & Puffer, Formatierung, Druck, Einreichung                 & 2 Wochen   \\
+\end{longtable}
+\endgroup
 
 % Leitfragen (FOM-Gliederungshilfe):
 % - Erster Zeitplan: welche Schritte sind notwendig, in welcher Reihenfolge?
