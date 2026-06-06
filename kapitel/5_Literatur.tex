@@ -1,6 +1,85 @@
 \newpage
+% Definition des P-Spaltentyps (linksbündig mit fester Breite)
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+% Definition eines hellen Grautons (optional anpassbar, z.B. 10% Schwarz)
+\definecolor{hellgrau}{gray}{0.9}
 \section{Literatur}
-asdfasdf
+ 
+Die Literaturrecherche soll systematisch nach dem Rahmen von \textcite{VomBrocke2009} durchgeführt werden, da die Recherchestrategie selbst Bestandteil der wissenschaftlichen Methode ist \autocite{WildeHess2007}. Als primäre Datenbanken sind SpringerLink, ScienceDirect, die ACM Digital Library und IEEE~Xplore vorgesehen; die Suchbegriffe werden entlang der drei thematischen Stränge der Arbeit strukturiert: RPA-Grundlagen (\enquote{Robotic Process Automation}, \enquote{UI automation}), Legacy-Systeme (\enquote{legacy system integration}, \enquote{screen scraping}) sowie Vorgehensmodelle und Design Science (\enquote{DSRM}, \enquote{process automation framework}). Bevorzugt werden Fachbücher und Sammelbandbeiträge; Zeitschriften- und Konferenzbeiträge werden ergänzend berücksichtigt, sofern kein gleichwertiges Buchwerk verfügbar ist. Der zeitliche Fokus liegt auf Veröffentlichungen ab 2014; anerkannte Grundlagenwerke wie \textcite{Hevner2004} und \textcite{Peffers2007} werden als explizite Ausnahmen einbezogen. Erste zentrale Quellen wurden bereits gesichtet und sind in Tabelle~\ref{tab:literaturuebersicht} zusammengefasst.
+ 
+\bigskip
+ 
+\begingroup
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.4}
+\setlength{\aboverulesep}{0pt}
+\setlength{\belowrulesep}{0pt}
+\begin{longtable}{P{3.0cm}P{4.3cm}P{1.0cm}P{5.0cm}}
+\caption{Übersicht der Kernliteratur (Auswahl)}
+\label{tab:literaturuebersicht}\\
+\toprule
+\rowcolor{hellgrau}
+\textbf{Autoren (Erstautor et al.)} & \textbf{Titel (Kurzform)} &
+\textbf{Jahr} & \textbf{Beitrag zur Arbeit} \\[2pt]
+\midrule
+\endfirsthead
+\multicolumn{4}{l}{\small\itshape Fortsetzung Tabelle \ref{tab:literaturuebersicht}}\\
+\toprule
+\rowcolor{hellgrau}
+\textbf{Autoren} & \textbf{Titel (Kurzform)} & \textbf{Jahr} &
+\textbf{Beitrag zur Arbeit} \\[2pt]
+\midrule
+\endhead
+\bottomrule
+\endfoot
+ 
+van der Aalst et al. & Robotic Process Automation & 2018 & Begriffsdefinition und wissenschaftliche Einordnung von RPA; Ausgangspunkt für die theoretische Grundlegung. \\
+\addlinespace
+ 
+Wewerka \& Reichert & RPA: Systematic Mapping Study & 2023 & Überblick über Forschungsstand und Klassifikation; identifiziert Lücken in der RPA-Methodikforschung. \\
+\addlinespace
+ 
+Feldmann (Hrsg.) & Praxishandbuch RPA & 2022 & Gesamtdarstellung von Prozessanalyse bis Betrieb; buchgestützte Grundlage für das RPA-Kapitel. \\
+\addlinespace
+ 
+Czarnecki \& Fettke (Hrsg.) & RPA: Management, Technology, Applications & 2021 & Sammelband zu Management, Technologie und UI-Automatisierung. \\
+\addlinespace
+ 
+Rutschi \& Dibbern & Framework for Implementing Software Robots & 2020 & Transformationsrahmen von menschlichen Routinen zu Software-Bots; relevant für das Vorgehensmodell. \\
+\addlinespace
+ 
+Jimenez-Ramirez et al. & Improving Early Stages of RPA Lifecycle & 2019 & Methode zur Verbesserung früher RPA-Phasen; Vergleichsfolie für die Modellentwicklung. \\
+\addlinespace
+ 
+Bisbal et al. & Legacy Information Systems: Issues & 1999 & Grundlagenwerk zur Definition von Legacy-Systemen; konzeptueller Rahmen für den Legacy-Kontext. \\
+\addlinespace
+ 
+Schmitz et al. & RPA at Deutsche Telekom & 2019 & Fallstudie zu RPA in API-armer Umgebung; belegt Praxisrelevanz des Forschungsthemas. \\
+\addlinespace
+ 
+Herm et al. & Framework for Implementing RPA Projects & 2022 & Umfassendes RPA-Implementierungs-Framework; zentraler Vergleichspunkt für das zu entwickelnde Modell. \\
+\addlinespace
+ 
+Krakau \& Feldmann & RPA in der Logistik: Vorgehensmodell & 2023 & Branchenspezifisches Vorgehensmodell; direktes Strukturierungsvorbild. \\
+\addlinespace
+ 
+Santos \& Pereira & Toward RPA Implementation: End-to-End & 2020 & End-to-End-Perspektive auf RPA-Implementierung; ergänzender Vergleichsrahmen. \\
+\addlinespace
+ 
+Hevner et al. & Design Science in IS Research & 2004 & Grundlagenwerk der DSR-Methodik; bildet den methodischen Rahmen der Arbeit. \\
+\addlinespace
+ 
+Peffers et al. & Design Science Research Methodology & 2007 & DSRM-Phasenmodell; strukturiert den gesamten Forschungsprozess. \\
+\addlinespace
+ 
+Venable et al. & FEDS: Framework for Evaluation in DSR & 2016 & Evaluierungsrahmen für DSR-Artefakte; relevant für die geplante Expertenvalidierung. \\
+\addlinespace
+ 
+vom Brocke et al. & Reconstructing the Giant & 2009 & Anforderungen an rigorose Literaturrecherche; methodische Grundlage für die Recherchestrategie. \\
+\addlinespace
+ 
+\end{longtable}
+\endgroup
 
 % Leitfragen (FOM-Gliederungshilfe):
 % - Auf welche Literatur wollen Sie sich stuetzen? Wie suchen und finden Sie diese?

@@ -1,6 +1,62 @@
 \newpage
 \section{Ausgangslage und Einordnung in die bestehende Forschung}
 
+Die vorliegende Arbeit ist im Schnittfeld zweier aktueller Forschungsfelder 
+der Wirtschaftsinformatik angesiedelt: der technologiegetriebenen 
+Prozessautomatisierung durch Robotic Process Automation (RPA) einerseits 
+und der Frage nach strukturierten Vorgehensmodellen für die 
+Systementwicklung andererseits. \textcite{VanDerAalst2018} ordnen RPA 
+als eine eigenständige Klasse von Automatisierungstechnologien ein, 
+die sich explizit an der Benutzerschnittstelle bestehender Systeme 
+orientiert – und damit konzeptionell von klassischen 
+Integrationsansätzen auf Datenbankebene abgrenzt. Diese Positionierung 
+macht RPA für Unternehmensumgebungen besonders interessant, in denen 
+eine tiefe systemseitige Integration technisch nicht realisierbar oder 
+wirtschaftlich nicht vertretbar ist.
+
+Die Relevanz des Themas ergibt sich unmittelbar aus der 
+betrieblichen Realität vieler Unternehmen: Ein erheblicher Anteil 
+produktiv genutzter IT-Systeme zählt zur Kategorie der Legacy-Systeme, 
+also Systeme, deren Ablösung oder Modernisierung aus technischen, 
+finanziellen oder organisatorischen Gründen nicht kurzfristig möglich 
+ist \autocite{Bisbal1999}. Da diese Systeme häufig keine modernen 
+API-Schnittstellen bereitstellen, bleibt UI-basierte RPA in vielen 
+Fällen die einzig praktikable Automatisierungsoption. Wer einen Nutzen 
+aus den Ergebnissen dieser Arbeit ziehen kann, sind insbesondere 
+Unternehmen und IT-Verantwortliche, die mit genau diesen 
+Schnittstellenrestriktionen konfrontiert sind und dennoch Effizienz- 
+und Qualitätsziele durch Automatisierung verfolgen.
+
+Der bisherige Forschungsstand zu RPA ist in den vergangenen Jahren 
+deutlich gewachsen. \textcite{Wewerka2023} legen mit ihrem 
+systematischen Mapping der RPA-Forschung nahe, dass der 
+Themenkomplex zwar zunehmend wissenschaftlich erschlossen wird, 
+methodische und kontextspezifische Lücken jedoch fortbestehen. 
+\textcite{Syed2020} identifizieren RPA als ein Phänomen, das in 
+der Praxis trotz hoher Adaption konzeptionell wenig scharf 
+abgegrenzt und in der Implementierung uneinheitlich vollzogen wird. 
+Bestehende Vorgehensmodelle für die RPA-Einführung, etwa das 
+Framework von \textcite{HermJaniesch2022} oder der Ansatz von 
+\textcite{SantosPereira2020}, adressieren primär allgemeine 
+Implementierungsphasen und setzen dabei implizit eine grundlegende 
+Integrierbarkeit der Zielsysteme voraus. \textcite{KrakauFeldmann2023} 
+entwickeln ein Vorgehensmodell spezifisch für den Logistikkontext, 
+das jedoch ebenfalls keine systematische Betrachtung API-loser 
+Umgebungen vornimmt. Die spezifische Konstellation – UI-basierte 
+RPA in Verbindung mit Legacy-Systemen ohne API-Zugang – ist damit 
+in der Forschung bislang nicht als eigenständiger Gegenstand 
+behandelt worden. \autocite{TODO} % QUELLE PRÜFEN: ggf. neuere 
+% Übersichtsarbeiten zur RPA-Legacy-Kombination
+
+Fallstudien wie die von \textcite{SchmitzDietzeCzarnecki2019} 
+dokumentieren, dass RPA in der betrieblichen Praxis erfolgreich 
+zur Digitalisierung von Prozessen in gewachsenen IT-Landschaften 
+eingesetzt wird – liefern jedoch keine verallgemeinerbaren, 
+methodisch fundierten Vorgehensempfehlungen für die Projektumsetzung 
+unter den genannten Randbedingungen. Der vorliegenden Arbeit geht es 
+daher darum, genau diese Lücke zu untersuchen und einen wissenschaftlich 
+begründeten Beitrag zu ihrer Schließung zu leisten.
+
 % Leitfragen (FOM-Gliederungshilfe):
 % - Wie sieht das wissenschaftliche Umfeld des Themas aus? In welchen groesseren
 %   Kontext / Fragestellung wuerden Sie das Thema einordnen?
